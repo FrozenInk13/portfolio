@@ -111,11 +111,17 @@ section:hover {
 
 /* Background Image (c) */
 body {
+    background: url("../images/SunsetFloweryView_cut.jpg") center center fixed;
+    background-size: cover;
+
+    /* Commenting this out to test if the above works even though it's literally the exact same.
+body {
     background: url("/images/SunsetFloweryView_cut.jpg") center center fixed !important;
     background-size: cover;
-    /* Make this lighter so we can see the text better */
+    /* Make this lighter so we can see the text better
 }
-
+*/
+    
 /* Modify default tag styling (d) */
 h1 {
     font-size: 2.5em;
