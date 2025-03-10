@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactical Explorations</title>
+    <link rel="stylesheet" href="styles/styles_p3.css">
+</head>
+<body>
+    <!-- Sticky Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">GALACTICAL EXPLORATIONS</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="#gal-month">Galaxy of the Month</a>
+            <a href="#crafts">Crafts</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+<!-- Section 0 (Header/Banner) -->
+    <!-- Banner + below text -->
+    <header class="banner">
+        <h1>Explore our Universe</h1>
+        <p>Enjoy learning about galaxies, their various types, and what makes them up</p>
+    </header>
+    
+<!-- Section 1 (Introduction + Sign-up form) -->
+    <section class="introduction"> <!-- Note that in the example this is "static-content". -->
+        <h2>Explore all sorts of galaxies with us!</h2>
+        <p>Create an account to stay up-to-date with any new galactic news.</p>
+
+        <!-- Sign-up Button -->
+        <button onclick="document.getElementById('signup-form').style.display='block'">
+            Sign Up
+        </button> <!-- Just want to make sure one button works fine before I add another. -->
+        
+        <!-- Code for the sign-up button -->
+           <!-- Note for the grader: This is almost an exact copy + paste of what was done in the example. The differences will be in CSS. -->
+        <div id="signup-form" class="form-popup">
+            <form class="form-container">
+                <h2>Sign Up to not miss anything happening in our universe!</h2>
+                <label for="name">Full Name:</label>
+                <input id="name" type="text" name="fullname" placeholder="Enter your name (First, Last)" required="">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email" required="">
+                <button class="btn" type="submit">Submit</button>
+                <button class="btn cancel" type="button" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+            </form>
+        </div>
+    </section>
+
+<!-- Section 2 -->
+    <section class="types-of-galaxies"> <!-- "recent-projects" in example. -->
+    <h2>Types of Galaxies</h2>
+    <div class="types-gal-grid"> <!-- "posts-grid" in the example. -->
+        <!-- Spiral Galaxies -->
+        <article class="galaxies-card"> <!-- "post-card" in the example. -->
+            <!-- Resize image later -->
+            <img src="images/S2_TypesOfGalaxies/spiral.jpg" alt="Messier 96, an example of a spiral galaxy.">
+            <div class="galaxies-content">
+                <h3>Spiral</h3>
+                <p>A spiral galaxy is a type of galaxy that is shaped like a spiral, as-per its name. The galaxy shown above <!-- to the left?? idk where yet --> is known as Messier 96, and is a more asymmetric sprial galaxy than most.</p>
+            </div>
+        </article>
+        <!-- Barred Spiral Galaxies -->
+        <article class="galaxies-card">
+            <img src="images/S2_TypesOfGalaxies/barred_spiral.jpg" alt="NGC 1300, an example of a barred spiral galaxy.">
+            <div class="galaxies-content">
+                <h3>Barred Spiral</h3>
+                <p>A barred spiral galaxy is very similar to a spiral galaxy with the only difference being its center is shaped like a bar. Our galaxy, the Milky Way, is an example of one of these galaxies.</p>
+            </div>
+        </article>
+        <!-- Elliptical Galaxies -->
+        <article class="galaxies-card">
+            <img src="images/S2_TypesOfGalaxies/elliptical.jpg" alt="The Sombrero Galaxy, an example of an elliptical galaxy.">
+            <div class="galaxies-content">
+                <h3>Elliptical</h3>
+                <p>An elliptical galaxy is a galaxy that, true to its name, is shaped like an ellipse or an oval. The pictured galaxy, the Sombrero Galaxy, is one example of this type of galaxy out there.</p>
+            </div>
+        </article>
+        <!-- Irregular Galaxies -->
+         <article class="galaxies-card">
+            <img src="images/S2_TypesOfGalaxies/irregular.jpg" alt="IC 559, an example of an irregular galaxy.">
+            <div class="galaxies-content">
+                <h3>Irregular</h3>
+                <p>Irregular galaxies don't fit within the standards for defining galaxies and can be best compared to a cluster of stars pulled together into a galaxy by gravity, such as the galaxy IC 559 pictured above.<!-- or to the left, idk yet. --></p>
+            </div>
+        </article>
+    </div>
+    </section>
+
+<!-- Section 3 -->
+        <!-- Same process as Section 2! -->
+    <section class="stuff-in-galaxies">
+    <h2>Discover What Makes Up Galaxies</h2>
+    <div class="inside-galaxies-grid">
+    <!-- Stars -->
+        <article class="inside-card">
+            <img src="images/S3_WhatsInGalaxies/star.jpg" alt="An image of the galaxy NGC 7250 with many stars visable in the image. The bright object seen near the middle of this image is a star called TYC 3203-450-1.">
+            <div class="inside-content">
+                <h3>Stars</h3>
+                <p>Stars are the lifeblood of our universe. They are the twinkling dots you see in the sky at night, and it's from them that we get all of the elements required for life.</p>
+            </div>
+        </article>
+    <!-- Nebulae -->
+        <article class="inside-card">
+            <img src="images/S3_WhatsInGalaxies/nebula.jpg" alt="The Ghost Head nebula, an example of a nebula.">
+            <div class="inside-content">
+                <h3>Nebulae</h3>
+                <p>Nebulae are clouds of dust found throughout our universe that serve as breeding grounds for new stars. The nebula seen in this image is the Ghost Head nebula.</p>
+            </div>
+        </article>
+    <!-- Star Clusters (image of one type; Globular or Open) -->
+        <article class="inside-card">
+            <img src="images/S3_WhatsInGalaxies/star_cluster.jpg" alt="NGC 6496, an example of a star cluster. This star cluster in particular is a globular cluster.">
+            <div class="inside-content">
+                <h3>Star Clusters</h3>
+                <p>A star cluster is simply just a group of stars clustered together, most commonly due to them all being born from the same nebula. There are two main types of star clusters based on how they're arranged; globular and open.</p>
+            </div>
+        </article>
+    <!-- Black Holes -->
+        <article class="inside-card">
+            <img src="images/S3_WhatsInGalaxies/black_hole.jpg" alt="A computer-simulated image of a supermassive black hole at the core of a galaxy.">
+            <div class="inside-content">
+                <h3>Black Holes</h3>
+                <p>Black holes are points in space where gravity wins over any expansion force, creating a space where everything, even light, cannot escape from. Because of this, it is incredibly difficult to impossible to capture an image of a black hole.</p>
+            </div>
+        </article>
+    </div>
+    </section>
+
+<!-- Section 4 (Galaxy of the Month) -->
+    <section id="gal-month" class="galaxy-of-the-month">
+    <h2>Galaxy of the Month</h2>
+    <!-- Image in one box -->
+    <div class="gal-of-month-grid">
+        <img src="images/S4_GalaxyOfTheMonth/gal_of_month_1.jpg" alt="A spiral galaxy that has a lot of blue stars and a red light coming from its center.">
+    </div>
+    <!-- Header + Decription in the neighboring box -->
+    <div class="gal-of-month-text">
+        <h3>NGC 300</h3>
+        <p>NGC 300 is a spiral galaxy located about seven million light-years from us. It has all the telltale signs of a classic spiral galaxy and has lots of star formation still happening in it as evidenced by the amount of blue stars in it. It is located in the constellation Sculptor, which is a constallation in the southern sky that lies just west of Aquarius.</p>
+    </div>
+    </section>
+
+<!-- Section 5 (Local System) -->
+    <section class="local-system">
+    <!-- Header -->
+        <h2>Explore our Local System</h2>
+    <!-- Image gallery -->
+        <div class="local-syst-gallery">
+            <img src="images/S5_LocalSystem/small.jpg" alt="Image showing the Small Magellanic Cloud.">
+            <img src="images/S5_LocalSystem/andro.jpg" alt="Image showing the Andromeda Galaxy.">
+            <img src="images/S5_LocalSystem/big.jpg" alt="Image showing the Large Magellanic Cloud.">
+        </div>
+    <!-- Description of what a Local System is and the galaxies in it -->
+        <div class="local-syst-desc">
+            <p>The Local System is the group of galaxies that we exist in. The three most prominant galaxies in our local system are shown above -- in order, it's the Small Magellanic Cloud, the Andromeda Galaxy, and the Large Magellanic Cloud -- and many other galaxies, most of which being dwarf galaxies.</p>
+        </div>
+    </section>
+
+<!-- Section 6 (James Webb & Hubble Stuff) -->
+    <section id="crafts" class="space-crafts">
+    <h2>The Crafts Behind Such Discoveries</h2>
+    <!-- Description of the crafts used today and in the past (James Webb, Hubble, ect.) -->
+        <div class="crafts-desc">
+            <p class="first-para">Our knowledge of what lies beyond what we can see would be nowhere near as extensive as it is now without tools we've used to find new, interesting objects in space. Ground-based telescopes are helpful on a ground level, but they aren't powerful enough to detect everything we know is out there. That's where space telescopes come in, which are devices created on Earth and sent up into space to gather images we would have no chance of seeing on Earth and send them back to us to analyze and make sense of. The two most well-known space telescopes are the Hubble Space Telescope and the James Webb Space Telescope, both of which have greatly increased our knowledge of the cosmos. The James Webb Space Telescope is the most recent of these crafts sent out, and the images it's recorded have already done wonders to our understanding of how the universe and other galaxies work.</p>
+            <p>Below is an image of the galactic cluster SMACS 0723 captured by the James Webb Space Telescope. Compared to the space telescopes we've used before, the images from this space telescope are clear enough to make out stellar objects we couldn't have even dreamed of being able to see before.</p>
+        </div>
+    <!-- Either a random image of space or an image of one of the crafts, depending on copyright. -->
+        <figure class="crafts-image">
+            <img src="images/S6_CraftsBehindDiscoveries/james_webb.png" alt="An image of the galactic cluster SMACS 0723. Hundreds of lights are visable, with each one of those lights being a galaxy.">
+            <div class="image-overlay">
+                <div class="overlay-text">
+                    An image of the galactic cluster SMACS 0723 taken by the James Webb Space Telescope.
+                </div>
+            </div>
+        </figure>
+    </section>
+
+<!-- Footer & Finisher -->
+<footer>
+    <p>
+        © 2025 Galactical Explorations | All Rights Reserved | Images from NASA
+    </p>
+</footer>
+
+</body>
+</html>

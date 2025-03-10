@@ -1,0 +1,175 @@
+/* Mail and Phone are same size; Portfolio is smaller */
+/* Mail image size tweaking */
+
+/* Phone image size tweaking */
+
+/* Portfolio image size tweaking */
+
+
+header {
+    background: rgba(15, 15, 15, 0.3);
+    border-radius: 15px;
+    text-align: center; /* This took me a stupidly long time to figure out how to do.
+    Thank you for including the demos because otherwise I probably would've given up on this! */
+}
+
+/* Navbar styles */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.845);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #7b7676;
+}
+
+/* Anchor sidequest */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #bbbbbb;
+}
+
+a:hover {
+    color: #99f8ff;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #00ffb3;
+}
+
+/* Navbar mainquest */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Media queries for dif. screen sizes (a) */
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.44);
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    /* Styles for tablets and mobile devices */
+    body {
+        padding: 10px;
+    }
+    section {
+        width: 100%;
+    }
+}
+
+/* Smooth transitions for interactive elements (b) */
+section {
+    padding: 15px 20px;
+    min-width: 300px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Background Image (c) */
+body {
+    background: url("/images/SunsetFloweryView_cut.jpg") center center fixed;
+    background-size: cover;
+    /* Make this lighter so we can see the text better */
+}
+
+/* Modify default tag styling (d) */
+h1 {
+    font-size: 2.5em;
+    color: #867bdb;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Class attribute (e) */
+/* NOTE: When I was trying to figure out how to put the .contact-info stuff in the
+center of the screen, I found a bunch of stuff in the demo that I decided to take for
+my own. I did change a few things to fit how I wanted my project to be formatted, but
+I thought it would be best to let you know ahead of time. */
+
+
+/* Contact information styles */
+.contact-info {
+    background: rgba(15, 15, 15, 0.3);
+    border-radius: 15px;
+    line-height: 2;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #2c3e50;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+    margin: 0 2px;
+}
+
+.contact-link[href^="https://janedoe.dev"] {
+    color: #4ca7fc;  /* LinkedIn blue */
+}
+
+.contact-link[href^="mailto"] {
+    color: #f51637;  /* Email red */
+}
+
+.contact-link[href^="tel"] {
+    color: #46cf46;  /* Phone green */
+}
+
+.contact-link:hover {
+    opacity: 0.8;
+}
+
+.contact-icon {
+    vertical-align: middle;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+}

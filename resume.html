@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+        <title>Mock Resume</title>
+    </head>
+
+    <!-- Sticky Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">RESUME</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="#top">Top</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <header id="top">
+        <h1>Jane Doe</h1>
+        <!--Contact links; in order, it's email, phone, then a portfolio.-->
+        <p class="contact-info">
+            <a href="mailto:example@domain.com" class="contact-link">
+                <img src="images/MailIcon.png" style="height: 15px; width: 15px" alt="Email" class="contact-icon">
+                janedoe@example.com
+            </a>
+             | 
+            <a href="tel:0987654321" class="contact-link" target="_blank"> <!--HOPEFULLY this works.-->
+                <img src="images/PhoneIcon.png" style="height: 15px; width: 15px" alt="Phone" class="contact-icon">
+                (098) 765-4321
+            </a>
+             | 
+            <a href="https://janedoe.dev" class="contact-link">
+                <img src="images/portfolio-128.png" style="height: 15px; width: 15px" alt="Portfolio" class="contact-icon">
+                janedoe.dev
+            </a>
+        </p>
+    </header>
+    <section>
+        <h2>Objective</h2>
+        <p>UO student currently studying mathematics with an interest in data analytics. Seeking either an internship or a job to be able to apply my skills in the real world.</p>
+    </section>
+    <section>
+        <h2>Education</h2>
+        <h3>Bachelor of Science in Mathematics</h3>
+        <p>University of Oregon | Expected Graduation: June 2026</p>
+        <ul>
+            <li>Relevant Courses: Multi-Variable Calculus, Introduction to Abstract Algebra, Spreadsheet Analysis</li>
+            <li>GPA: 3.45/4.0</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: LaTeX, Moderate Python Experience, HTML, CSS, Javascript</li>
+            <li>Tools: LaTeX, VS Code, Excel</li>
+            <li>Soft Skills: Problem Solving, Attention to Detail, Works well Independently</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <h3>Portfolio Website</h3>
+        <p>Designed and develouped a responsive personal portfolio using HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+        <h3>Custom Randomizer</h3>
+        <p>Created a Python script that was able to take a long list of things, each with their own prerequisits, and put them in an order such that the given randomized list could be completed no matter what.</p>
+    </section>
+    <section>
+        <h2>Experience</h2>
+        <h3>Data Analyst Assistant</h3>
+        <p>Very Cool Place | June 2024 - August 2024</p>
+        <ul>
+            <li>Assisted in creating various spreadsheets in Excel to help organize and make sense of data.</li>
+            <li>Worked alongside professionals in the field to design efficient and optimal systems.</li>
+            <li>Learned the "do"s and "don't"s of data management while here.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li>Active Member, University Math Club</li>
+            <li>Former Member, National Honors Society in High School</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+    </footer>
+</html>
