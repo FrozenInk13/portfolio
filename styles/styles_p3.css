@@ -65,7 +65,7 @@ a:active {
 /* Section 0 */
 .banner {
     /* Inserting the image for this section */
-    background: url('/images/S0_Title/background_image.png') center/cover no-repeat;
+    background: url('images/S0_Title/background_image.png') center/cover no-repeat;
     opacity: 0.94;
 
     /* Text-stuff */
