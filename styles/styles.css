@@ -111,7 +111,7 @@ section:hover {
 
 /* Background Image (c) */
 body {
-    background: url("/images/SunsetFloweryView_cut.jpg") center center fixed;
+    background: url("/images/SunsetFloweryView_cut.jpg") center center fixed !important;
     background-size: cover;
     /* Make this lighter so we can see the text better */
 }
